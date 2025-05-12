@@ -1,4 +1,4 @@
-from surreal import Surreal
+from .surreal import Surreal
 
 if __name__ == "__main__":
     console = Surreal()
