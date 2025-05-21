@@ -137,6 +137,7 @@ class Surreal:
             'docs': SurrealPythonDocsInterface,
             # 'mrwalk': MrWalkInterface, # Ejemplo para futuras APIs
         }
+        self.history = []
         self.active_api = None
         print("Welcome to Surreal Console!")
         print("Type 'help' for a list of commands.")
@@ -153,6 +154,8 @@ class Surreal:
                 break
             if command in ["exit", "quit"]:
                 print("Surreal: Exiting Surreal Console...")
+                break
+            elif command == "" or command == "":
                 break
             elif command == "help":
                 self.show_help()
