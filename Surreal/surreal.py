@@ -9,6 +9,7 @@ from pathlib import Path
 
 from MrWalk import MrWalk
 from SurrealPythonDocs import SurrealPythonDocs
+from SurrealHttpServer import SurrealHttpServerInterface
 
 class SurrealPythonDocsInterface:
     """
@@ -135,6 +136,7 @@ class Surreal:
         # Diccionario de APIs disponibles (puedes registrar más aquí)
         self.apis = {
             'docs': SurrealPythonDocsInterface,
+            'httpd': SurrealHttpServerInterface
             # 'mrwalk': MrWalkInterface, # Ejemplo para futuras APIs
         }
         self.history = []
